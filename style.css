@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+   --indigo:#AA5CDB;
+   --violet: #1B1938;
+   --dark: #0A0C19;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   height: 100vh;
+   background-color: var(--dark);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sub-container {
+   background-color: var(--violet);
+   display: flex;
+   justify-content: center;
+   width: 80%;
+   height: 70vh;
+   border-radius: 5px;
+   overflow: hidden;
+}
+
+.left {
+   font-family: "Inter", sans-serif;
+   color:azure;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 35px;
+}
+
+.top > h1 {
+   margin-bottom: 20px;
+}
+
+.right {
+   width: 50%;
+}
+
+.right img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: left;
+}
+
+.bottom {
+   display: flex;
+   gap: 25px;
+}
+
+span {
+   color: var(--indigo);
+}
+
+@media screen and (max-width: 1200px) {
+   .left {
+      width: 70%;
+   }
+   .right {
+      width: 30%;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .sub-container {
+      flex-direction: column-reverse;
+      height: 90vh;
+   }
+  
+   .left {
+      width: 100%;
+      height: 50vh;
+   }
+   .right {
+      width: 100%;
+      height: 40vh;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .left {
+      height: 60vh;
+      padding: 20px;
+   }
+
+   .top h1 {
+      font-size: 25px;
+   }
+
+   .right {
+      height: 30vh;
+   }
+
+   .bottom {
+      gap: 20px;
+   }
+
+   .bottom h2 {
+      font-size: 16px;
+   }
+   .bottom h4 {
+      font-size: 14px;
+   }
+}
