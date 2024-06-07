@@ -60,6 +60,17 @@
    z-index: 50;
 }
 
+.right:hover .overlay {
+   display: none;
+   transition: all .3s;
+   cursor: pointer;
+}
+.right:hover img {
+   filter: grayscale(0);
+   transition: all .3s;
+   cursor: pointer;
+}
+
 .right img {
    width: 100%;
    height: 100%;
