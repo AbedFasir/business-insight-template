@@ -63,7 +63,6 @@
 .right:hover .overlay {
    display: none;
    transition: all .3s;
-   cursor: pointer;
 }
 .right:hover img {
    filter: grayscale(0);
